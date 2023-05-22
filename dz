@@ -1,0 +1,25 @@
+1)UPDATE Product
+SET data_of_delivery = GETDATE ()
+WHERE data_of_delivery <> CAST(GETDATE () AS DATE)
+SELECT
+FROM Product
+
+2) DELETE FROM Product
+WHERE quanyty < 100 AND price > 70;
+SELECT * FROM Product
+
+3) DELETE FROM Product
+WHERE category = 'Вода' OR color = 'Шоколад'
+SELECT * FROM Product
+
+4) EIDELETE FROM Product
+WHERE name LIKE ‘_____’
+SELECT * FROM Product
+
+5)  DELETE FROM Product
+WHERE data_of_delivery BETWEEN DATEADD (month,
+-3, getdate ()) AND getdate () - 1
+
+6)   DELETE FROM Product
+WHERE producer = 'unknown' OR discount > 10;
+
